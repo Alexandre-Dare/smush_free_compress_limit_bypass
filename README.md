@@ -1,35 +1,39 @@
 # smush_free_compress_limit_bypass
 Permet l'execution de la compression d'image sans avoir à rester sur la page pour relancer l'execution tout les 50 images
 
-Utilisation du Script pour Smush
+# Utilisation du Script pour Smush
 
 Ce script permet d'automatiser le processus de compression d'images avec le plugin Smush en relançant automatiquement la procédure lorsque le bouton "Resume" apparaît.
-Étapes d'utilisation
 
-    Accédez à la page du plugin Smush
-    Ouvrez l'interface de votre plugin Smush dans WordPress.
+## Étapes d'utilisation
 
-    Naviguez vers la page "Bulk Smush"
-    Cliquez sur l'option "Bulk Smush" pour accéder à la page de compression en masse.
+1. **Accédez à la page du plugin Smush**  
+   - Ouvrez l'interface de votre plugin Smush dans WordPress.
 
-    Ouvrez l'inspecteur de votre navigateur
-    Utilisez les outils de développement de votre navigateur (clic droit > "Inspecter" ou F12).
+2. **Naviguez vers la page "Bulk Smush"**  
+   - Cliquez sur l'option "Bulk Smush" pour accéder à la page de compression en masse.
 
-    Accédez à l'onglet Console
-    Dans les outils de développement, sélectionnez l'onglet "Console".
+3. **Ouvrez l'inspecteur de votre navigateur**  
+   - Utilisez les outils de développement de votre navigateur :  
+     - Clic droit sur la page > "Inspecter"  
+     - Ou appuyez sur `F12`
 
-    Copiez le script dans la console
-    Collez le script fourni dans la console.
+4. **Accédez à l'onglet Console**  
+   - Dans les outils de développement, sélectionnez l'onglet "Console".
 
-    Exécutez le script
-    Appuyez sur "Entrée" pour lancer le script. Celui-ci écoutera automatiquement l'apparition du bouton "Resume" et relancera le processus de compression d'image.
+5. **Copiez le script dans la console**  
+   - Collez le script fourni dans la console.
 
-Arrêt du script
+6. **Exécutez le script**  
+   - Appuyez sur "Entrée" pour lancer le script.  
+   - Le script écoutera automatiquement l'apparition du bouton "Resume" et relancera le processus de compression d'image.
 
-Pour arrêter l'exécution du script, tapez la commande suivante dans la console :
+## Arrêt du script
 
-javascript
+- Pour arrêter l'exécution du script, tapez la commande suivante dans la console :
 
-stopWatching()
+  ```javascript
+  stopWatching()
 
 Cela mettra fin à l'écoute automatique du bouton "Resume".
+
